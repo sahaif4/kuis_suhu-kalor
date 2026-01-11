@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Suhu & Kalor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Halaman Login -->
+        <div id="login-page" class="page active">
+            <h1>Kuis Suhu & Kalor</h1>
+            <p>Silakan masukkan identitas Anda untuk memulai.</p>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" required placeholder="Contoh: Irwan">
+                </div>
+                <div class="input-group">
+                    <label for="nim">NIM / No. Absen</label>
+                    <input type="text" id="nim" required placeholder="Contoh: 12345678">
+                </div>
+                <button type="submit" class="btn">Mulai Kuis</button>
+            </form>
+        </div>
+
+        <!-- Halaman Kuis -->
+        <div id="quiz-page" class="page hidden">
+            <div class="quiz-header">
+                <span id="question-number">Soal 1/10</span>
+                <span id="timer">Waktu: 10:00</span>
+            </div>
+            <div class="question-container">
+                <h2 id="question-text">Pertanyaan akan muncul di sini</h2>
+                <div id="options-container" class="options">
+                    <!-- Opsi jawaban akan digenerate via JS -->
+                </div>
+            </div>
+            <div class="quiz-footer">
+                <button id="next-btn" class="btn" disabled>Lanjut</button>
+            </div>
+        </div>
+
+        <!-- Halaman Hasil -->
+        <div id="result-page" class="page hidden">
+            <h1>Kuis Selesai!</h1>
+            <div class="result-card">
+                <p>Nama: <span id="result-nama">-</span></p>
+                <p>NIM/ID: <span id="result-nim">-</span></p>
+                <div class="score-circle">
+                    <span id="score-value">0</span>
+                </div>
+                <div id="status-container" style="margin-bottom: 20px;">
+                    <h3 id="status-text" style="font-weight: bold;">-</h3>
+                </div>
+                <p class="info-text" id="sending-status">Nilai sedang dikirim ke database...</p>
+            </div>
+            <!-- Tombol WA dihapus, diganti dengan pesan konfirmasi -->
+            <div id="completion-message" class="hidden" style="margin-top: 20px; color: green; font-weight: bold;">
+                Data nilai telah berhasil direkap. Silakan lapor ke Dosen.
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
