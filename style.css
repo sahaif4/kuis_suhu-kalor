@@ -96,6 +96,50 @@ input:focus {
     cursor: not-allowed;
 }
 
+/* Download Section */
+.download-section {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.download-section h3 {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #e1e4e8;
+    color: var(--text-color);
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+.btn-download:hover {
+    background-color: var(--white);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
 /* Quiz Styles */
 .quiz-header {
     display: flex;
