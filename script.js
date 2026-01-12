@@ -64,7 +64,7 @@ let violationCount = 0;
 const MAX_VIOLATIONS = 1; // Maksimal pelanggaran (pindah tab/aplikasi) sebelum auto-submit
 
 // URL Google Apps Script
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwXGHgDMCfWLIOR31pdp64VFEvSi1UvpDr5OGEmn5rODTlQMQvTViFJsCulmhCGmsey/exec"; 
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxF0jKayX355pKU2V2Z7gT-U9Ov9fiGsN0sW6EwKLhTotYRHb21cwPX1twfxL54D1t5/exec"; 
 
 // DOM Elements
 const loginPage = document.getElementById('login-page');
@@ -261,21 +261,26 @@ function sendToGoogleSheets(status) {
     formData.append('status', status);
     formData.append('pelanggaran', violationCount);
 
+    // Debug log
+    console.log("Mengirim data ke:", GOOGLE_SCRIPT_URL);
+    console.log("Data:", formData.toString());
+
     fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
-        mode: 'no-cors', 
+        mode: 'no-cors', // Penting agar tidak error CORS di browser
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: formData.toString()
     })
     .then(response => {
-        // Karena no-cors, kita asumsikan berhasil jika tidak error network
+        // Karena no-cors, response akan selalu 'opaque' (status 0), jadi kita anggap sukses jika tidak masuk catch
+        console.log("Data terkirim (no-cors mode)");
         if (sendingStatus) sendingStatus.style.display = 'none';
         if (completionMessage) completionMessage.classList.remove('hidden');
     })
     .catch(error => {
-        console.error('Error:', error);
+        console.error('Error sending data:', error);
         if (sendingStatus) {
             sendingStatus.textContent = "Gagal mengirim data. Silakan screenshot halaman ini.";
             sendingStatus.style.color = "red";
