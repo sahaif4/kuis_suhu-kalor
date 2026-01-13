@@ -48,6 +48,51 @@ const questions = [
         question: "Pada mesin pengering buatan (artificial dryer), efisiensi termal dipengaruhi oleh...",
         options: ["Warna cat mesin", "Suhu udara pengering dan aliran udara", "Merk mesin", "Jenis roda penggerak"],
         correct: 1 // Suhu dan aliran udara
+    },
+    {
+        question: "Celah pada pemasangan ring piston mesin traktor bertujuan untuk mengantisipasi...",
+        options: ["Penyusutan logam saat dingin", "Pemuaian logam saat panas", "Aliran oli", "Kebocoran kompresi"],
+        correct: 1 // Pemuaian
+    },
+    {
+        question: "Sistem pendingin 'Pad and Fan' pada rumah kaca (greenhouse) bekerja berdasarkan prinsip...",
+        options: ["Evaporasi air menyerap panas", "Radiasi sinar matahari", "Konduksi tanah", "Konveksi paksa tanpa air"],
+        correct: 0 // Evaporasi
+    },
+    {
+        question: "Pasteurisasi susu metode LTLT (Low Temperature Long Time) dilakukan pada suhu sekitar...",
+        options: ["100°C selama 10 menit", "63°C selama 30 menit", "72°C selama 15 detik", "121°C selama 15 menit"],
+        correct: 1 // 63C 30m
+    },
+    {
+        question: "Pada mesin bakar dalam (Internal Combustion Engine), berapa persen energi bahan bakar yang umumnya terbuang menjadi panas (bukan tenaga mekanis)?",
+        options: ["Kurang dari 10%", "Sekitar 30-40%", "Sekitar 60-70%", "100%"],
+        correct: 2 // ~60-70% wasted (efficiency ~30-40%)
+    },
+    {
+        question: "Fungsi kompresor pada sistem pendingin (refrigeration) ruang simpan hasil pertanian adalah...",
+        options: ["Menurunkan tekanan refrigeran", "Menaikkan tekanan dan suhu refrigeran", "Mendinginkan kondensor", "Menguapkan refrigeran"],
+        correct: 1 // Menaikkan tekanan & suhu
+    },
+    {
+        question: "Alat penukar panas (heat exchanger) tipe pelat sering digunakan dalam industri pangan cair karena...",
+        options: ["Luas permukaan kontak besar sehingga perpindahan panas cepat", "Harganya sangat murah", "Tidak butuh perawatan", "Bisa memanaskan benda padat"],
+        correct: 0 // Luas permukaan besar
+    },
+    {
+        question: "Kadar air keseimbangan (EMC) gabah dipengaruhi oleh suhu udara dan...",
+        options: ["Kelembaban relatif (RH) udara", "Kecepatan angin", "Tekanan atmosfer", "Intensitas cahaya"],
+        correct: 0 // RH
+    },
+    {
+        question: "Penggunaan mulsa plastik hitam-perak pada bedengan tanaman bertujuan untuk memantulkan radiasi matahari dan...",
+        options: ["Menurunkan suhu tanah drastis", "Menjaga kelembaban dan kestabilan suhu tanah", "Mendinginkan udara sekitar", "Menarik hama"],
+        correct: 1 // Jaga kelembaban & suhu
+    },
+    {
+        question: "Panas yang timbul akibat gesekan antara bajak piringan dengan tanah termasuk contoh konversi energi...",
+        options: ["Mekanis menjadi Panas", "Kimia menjadi Panas", "Listrik menjadi Panas", "Panas menjadi Mekanis"],
+        correct: 0 // Mekanis -> Panas
     }
 ];
 
