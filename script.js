@@ -1,98 +1,103 @@
 const questions = [
     {
-        question: "Pada sistem pendingin mesin traktor, komponen yang berfungsi membuang panas air pendingin ke udara bebas melalui sirip-sirip adalah...",
-        options: ["Thermostat", "Water Pump", "Radiator", "Kipas Pendingin"],
-        correct: 2 // Radiator
+        question: "Apakah satuan SI untuk suhu?",
+        options: ["Celcius", "Fahrenheit", "Kelvin", "Reamur"],
+        correct: 2 // Index of 'Kelvin'
     },
     {
-        question: "Dalam proses pengeringan gabah (grain drying), perpindahan panas yang terjadi dari udara panas ke permukaan gabah didominasi oleh mekanisme...",
-        options: ["Konduksi", "Konveksi", "Radiasi", "Induksi"],
-        correct: 1 // Konveksi
+        question: "Kalor berpindah dari benda bersuhu ... ke benda bersuhu ...",
+        options: ["Rendah ke tinggi", "Tinggi ke rendah", "Tetap ke berubah", "Dingin ke panas"],
+        correct: 1
     },
     {
-        question: "Mengapa air sering digunakan sebagai fluida pendingin pada mesin diesel pertanian?",
-        options: ["Karena memiliki kalor jenis (specific heat) yang tinggi", "Karena titik didihnya rendah", "Karena massa jenisnya ringan", "Karena mudah membeku"],
-        correct: 0 // Kalor jenis tinggi
+        question: "Perpindahan kalor tanpa disertai perpindahan partikel zat disebut...",
+        options: ["Konduksi", "Konveksi", "Radiasi", "Evaporasi"],
+        correct: 0
     },
     {
-        question: "Pada langkah kompresi mesin diesel 4-tak, udara ditekan sehingga suhunya meningkat drastis. Kenaikan suhu ini disebabkan oleh...",
-        options: ["Pembakaran bahan bakar", "Gesekan piston", "Kompresi adiabatik", "Percikan busi"],
-        correct: 2 // Kompresi adiabatik
+        question: "Banyaknya kalor yang diperlukan untuk menaikkan suhu 1 kg zat sebesar 1°C disebut...",
+        options: ["Kapasitas kalor", "Kalor jenis", "Kalor lebur", "Kalor uap"],
+        correct: 1
     },
     {
-        question: "Alat yang digunakan untuk mengukur kelembaban udara (Relative Humidity) dalam penyimpanan benih, yang memanfaatkan perbedaan suhu bola kering dan bola basah adalah...",
-        options: ["Thermocouple", "Psychrometer", "Pyrometer", "Manometer"],
-        correct: 1 // Psychrometer
+        question: "Alat untuk mengukur suhu adalah...",
+        options: ["Barometer", "Termometer", "Higrometer", "Manometer"],
+        correct: 1
     },
     {
-        question: "Efek rumah kaca (greenhouse effect) pada bangunan pertanian terjadi karena atap transparan...",
-        options: ["Memantulkan semua radiasi matahari", "Meneruskan gelombang pendek matahari tetapi menahan gelombang panjang dari dalam", "Menyerap semua panas matahari", "Mendinginkan udara di dalam"],
-        correct: 1 // Shortwave in, longwave trapped
+        question: "Suhu 100°C sama dengan ... °F",
+        options: ["180", "212", "32", "273"],
+        correct: 1 // (100 * 9/5) + 32 = 212
     },
     {
-        question: "Bahan isolator yang baik untuk dinding ruang pendingin (cold storage) hasil pertanian harus memiliki sifat...",
-        options: ["Konduktivitas termal tinggi", "Konduktivitas termal rendah", "Kapasitas kalor rendah", "Massa jenis tinggi"],
-        correct: 1 // Low thermal conductivity
+        question: "Perpindahan kalor yang disertai dengan perpindahan partikel zat disebut...",
+        options: ["Konduksi", "Konveksi", "Radiasi", "Isolasi"],
+        correct: 1
     },
     {
-        question: "Satuan standar daya mesin pertanian sering dinyatakan dalam Horse Power (HP). 1 HP setara dengan berapa watt (sistem imperial)?",
-        options: ["746 Watt", "1000 Watt", "500 Watt", "980 Watt"],
-        correct: 0 // 746 Watt
+        question: "Contoh perpindahan kalor secara radiasi adalah...",
+        options: ["Ujung logam dipanaskan", "Air mendidih", "Panas matahari sampai ke bumi", "Angin darat dan angin laut"],
+        correct: 2
     },
     {
-        question: "Proses perpindahan panas secara radiasi yang paling utama dalam pertanian adalah...",
-        options: ["Panas dari mesin ke operator", "Energi matahari untuk fotosintesis dan pengeringan alami", "Panas dari tanah ke akar", "Aliran udara dalam silo"],
-        correct: 1 // Matahari
+        question: "Rumus untuk menghitung kalor (Q) adalah...",
+        options: ["Q = m . c . ΔT", "Q = m . g . h", "Q = F . s", "Q = V . I"],
+        correct: 0
     },
     {
-        question: "Pada mesin pengering buatan (artificial dryer), efisiensi termal dipengaruhi oleh...",
-        options: ["Warna cat mesin", "Suhu udara pengering dan aliran udara", "Merk mesin", "Jenis roda penggerak"],
-        correct: 1 // Suhu dan aliran udara
+        question: "Saat air membeku, kalor...",
+        options: ["Diserap", "Dilepaskan", "Tetap", "Hilang"],
+        correct: 1
     },
     {
-        question: "Celah pada pemasangan ring piston mesin traktor bertujuan untuk mengantisipasi...",
-        options: ["Penyusutan logam saat dingin", "Pemuaian logam saat panas", "Aliran oli", "Kebocoran kompresi"],
-        correct: 1 // Pemuaian
+        question: "Suhu suatu ruangan 25°C. Jika dinyatakan dalam skala Fahrenheit, maka suhu tersebut adalah...",
+        options: ["45°F", "57°F", "77°F", "97°F", "117°F"],
+        correct: 2 // 77°F
     },
     {
-        question: "Sistem pendingin 'Pad and Fan' pada rumah kaca (greenhouse) bekerja berdasarkan prinsip...",
-        options: ["Evaporasi air menyerap panas", "Radiasi sinar matahari", "Konduksi tanah", "Konveksi paksa tanpa air"],
-        correct: 0 // Evaporasi
+        question: "Termometer X menunjukkan angka -20 pada titik beku air dan 130 pada titik didih air. Jika suhu suatu benda diukur dengan termometer Celcius menunjukkan 50°C, maka pada termometer X akan menunjukkan...",
+        options: ["25°X", "55°X", "75°X", "95°X", "105°X"],
+        correct: 1 // 55°X
     },
     {
-        question: "Pasteurisasi susu metode LTLT (Low Temperature Long Time) dilakukan pada suhu sekitar...",
-        options: ["100°C selama 10 menit", "63°C selama 30 menit", "72°C selama 15 detik", "121°C selama 15 menit"],
-        correct: 1 // 63C 30m
+        question: "Perbandingan skala suhu Celcius, Reamur, Fahrenheit, dan Kelvin adalah...",
+        options: ["5 : 4 : 9 : 5", "4 : 5 : 9 : 5", "9 : 5 : 4 : 5", "5 : 9 : 4 : 5", "4 : 9 : 5 : 5"],
+        correct: 0 // 5 : 4 : 9 : 5
     },
     {
-        question: "Pada mesin bakar dalam (Internal Combustion Engine), berapa persen energi bahan bakar yang umumnya terbuang menjadi panas (bukan tenaga mekanis)?",
-        options: ["Kurang dari 10%", "Sekitar 30-40%", "Sekitar 60-70%", "100%"],
-        correct: 2 // ~60-70% wasted (efficiency ~30-40%)
+        question: "Kalor yang dibutuhkan untuk mengubah 200 gram es bersuhu -10°C menjadi air bersuhu 0°C adalah... (kalor jenis es = 0,5 kal/g°C, kalor lebur es = 80 kal/g)",
+        options: ["16.000 kal", "17.000 kal", "18.000 kal", "19.000 kal", "20.000 kal"],
+        correct: 1 // 17.000 kal
     },
     {
-        question: "Fungsi kompresor pada sistem pendingin (refrigeration) ruang simpan hasil pertanian adalah...",
-        options: ["Menurunkan tekanan refrigeran", "Menaikkan tekanan dan suhu refrigeran", "Mendinginkan kondensor", "Menguapkan refrigeran"],
-        correct: 1 // Menaikkan tekanan & suhu
+        question: "Air bermassa 100 gram bersuhu 20°C dicampur dengan 50 gram air bersuhu 80°C. Jika kalor jenis air 1 kal/g°C dan tidak ada kalor yang terbuang, maka suhu akhir campuran adalah...",
+        options: ["30°C", "35°C", "40°C", "45°C", "50°C"],
+        correct: 2 // 40°C
     },
     {
-        question: "Alat penukar panas (heat exchanger) tipe pelat sering digunakan dalam industri pangan cair karena...",
-        options: ["Luas permukaan kontak besar sehingga perpindahan panas cepat", "Harganya sangat murah", "Tidak butuh perawatan", "Bisa memanaskan benda padat"],
-        correct: 0 // Luas permukaan besar
+        question: "Sebuah batang logam panjangnya 100 cm pada suhu 20°C. Jika koefisien muai panjang logam 0,000012/°C dan batang dipanaskan hingga 120°C, maka pertambahan panjang batang adalah...",
+        options: ["0,10 cm", "0,12 cm", "0,15 cm", "0,18 cm", "0,20 cm"],
+        correct: 1 // 0,12 cm
     },
     {
-        question: "Kadar air keseimbangan (EMC) gabah dipengaruhi oleh suhu udara dan...",
-        options: ["Kelembaban relatif (RH) udara", "Kecepatan angin", "Tekanan atmosfer", "Intensitas cahaya"],
-        correct: 0 // RH
+        question: "Hubungan antara koefisien muai panjang (α), koefisien muai luas (β), dan koefisien muai volume (γ) adalah...",
+        options: ["α = β = γ", "β = 2α dan γ = 3α", "β = 3α dan γ = 2α", "α = 2β = 3γ", "α = β = 2γ"],
+        correct: 1 // β = 2α dan γ = 3α
     },
     {
-        question: "Penggunaan mulsa plastik hitam-perak pada bedengan tanaman bertujuan untuk memantulkan radiasi matahari dan...",
-        options: ["Menurunkan suhu tanah drastis", "Menjaga kelembaban dan kestabilan suhu tanah", "Mendinginkan udara sekitar", "Menarik hama"],
-        correct: 1 // Jaga kelembaban & suhu
+        question: "Perpindahan kalor yang terjadi pada pemanasan air dalam panci adalah...",
+        options: ["konduksi saja", "konveksi saja", "radiasi saja", "konduksi dan konveksi", "konveksi dan radiasi"],
+        correct: 3 // konduksi dan konveksi
     },
     {
-        question: "Panas yang timbul akibat gesekan antara bajak piringan dengan tanah termasuk contoh konversi energi...",
-        options: ["Mekanis menjadi Panas", "Kimia menjadi Panas", "Listrik menjadi Panas", "Panas menjadi Mekanis"],
-        correct: 0 // Mekanis -> Panas
+        question: "Perpindahan kalor yang tidak memerlukan medium (zat perantara) adalah...",
+        options: ["konduksi", "konveksi", "radiasi", "adveksi", "sublimasi"],
+        correct: 2 // radiasi
+    },
+    {
+        question: "Menurut Hukum Stefan-Boltzmann, laju kalor radiasi sebanding dengan...",
+        options: ["suhu (T)", "kuadrat suhu (T²)", "pangkat tiga suhu (T³)", "pangkat empat suhu (T⁴)", "akar kuadrat suhu (√T)"],
+        correct: 3 // pangkat empat suhu (T⁴)
     }
 ];
 
