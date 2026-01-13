@@ -293,7 +293,11 @@ function calculateScore() {
             correctCount++;
         }
     });
-    score = correctCount * 10; // Assuming 10 questions, max score 100
+    // Max score 100. Jika 20 soal, per soal 5 poin.
+    score = Math.round((correctCount / questions.length) * 100); 
+    
+    // Pastikan score tidak lebih dari 100 (jaga-jaga)
+    if (score > 100) score = 100;
 }
 
 function sendToGoogleSheets(status) {
